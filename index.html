@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BichoDex — Privacy Policy</title>
+<!--
+  Standalone privacy policy page for the Google Play listing.
+
+  BEFORE HOSTING — check these, they are already filled in but verify them:
+    1. The contact email tengumori.apps@gmail.com (appears twice: the header line and
+       the Contact section). This goes on the PUBLIC store listing. Confirm it is the
+       dedicated contact account and that you can actually receive mail there.
+    2. The effective date, if it should differ from the one shown.
+
+  Host this file at a stable public URL (GitHub Pages, Google Sites, your own domain,
+  a public Notion page …) and put that URL in Play Console under
+  "Store listing" and "App content → Privacy policy", and in the app if it links out.
+
+  If you rename the app, replace "BichoDex" throughout.
+
+  Keep privacy-policy.md in this folder in sync with any change made here.
+-->
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1c1c1c;
+    background: #fbfbf9;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  h1 { font-size: 1.7rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.2rem; margin: 2.25rem 0 .5rem; }
+  h3 { font-size: 1.02rem; margin: 1.5rem 0 .35rem; }
+  .meta { color: #666; font-size: .95rem; margin: 0 0 1.5rem; }
+  .lead { font-size: 1.05rem; }
+  hr { border: 0; border-top: 1px solid #ddd; margin: 1.75rem 0; }
+  ul { padding-left: 1.4rem; }
+  li { margin: .3rem 0; }
+  code { background: rgba(0,0,0,.06); padding: .1em .35em; border-radius: 4px; font-size: .9em; }
+  a { color: #1a6fb0; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #14140f; }
+    .meta { color: #9a9a9a; }
+    hr { border-top-color: #333; }
+    code { background: rgba(255,255,255,.1); }
+    a { color: #6fb3e0; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>BichoDex — Privacy Policy</h1>
+<p class="meta">
+  Effective date: 10 September 2026<br>
+  Contact: <a href="mailto:tengumori.apps@gmail.com">tengumori.apps@gmail.com</a>
+</p>
+
+<p class="lead">
+  BichoDex is a game for identifying and collecting wildlife you photograph. This policy explains
+  exactly what the app does with your data. The short version: <strong>your collection lives on
+  your device, photos sent for identification are deleted immediately after processing, locations
+  are never recorded precisely, and there are no user accounts.</strong>
+</p>
+
+<hr>
+
+<h2>Data stored on your device only</h2>
+<p>
+  Everything that makes up your personal collection is stored locally on your device and is never
+  sent to a BichoDex server:
+</p>
+<ul>
+  <li>The photos you capture.</li>
+  <li>Your list of identified animals and dog breeds, with dates.</li>
+  <li>The coarse location of each sighting (see "Location" below).</li>
+  <li>Any notes you add to a sighting.</li>
+  <li>Achievement progress.</li>
+</ul>
+<p>
+  If you uninstall the app, this data is removed from your device. Depending on your Android
+  settings it may still exist in a backup, either one you made yourself (see "Google Drive backup")
+  or one Android made automatically (see "Android system backup").
+</p>
+
+<h2>Data sent off your device</h2>
+
+<h3>Photos, for identification only</h3>
+<p>
+  When you capture a photo and it is identified, a copy of that image (cropped to the framing
+  guide) is sent over an encrypted connection to our identification service. There it is analysed
+  to identify the animal and to check that it is a photo of a live animal rather than a photo of a
+  screen or a printed picture. <strong>The image is processed and then deleted immediately. It is
+  never stored on our servers.</strong> Your own full-resolution copy stays on your device.
+</p>
+<p>
+  Our identification service also uses Google's Gemini API as part of this process (for the
+  live-photo check, for generating the species/breed facts shown in the app, and for creating the
+  illustrated sketch for a species the first time anyone discovers it). The image and/or the
+  species name are sent to Google for that purpose. Google processes this data as our service
+  provider.
+</p>
+
+<h3>Approximate location</h3>
+<p>
+  If you grant location permission, BichoDex records <strong>only a coarse region</strong> for
+  each sighting — your location is snapped to a grid cell roughly 20&nbsp;km across (or a named
+  area) <strong>on your device, before it is stored or sent anywhere.</strong> A precise
+  coordinate is never saved and never leaves your device. This is a deliberate safety choice:
+  precise locations of wild animals can be misused.
+</p>
+<p>The coarse region is:</p>
+<ul>
+  <li>Stored with the sighting on your device.</li>
+  <li>
+    Sent to our service as part of an anonymous, aggregated count ("how many people have seen this
+    species in this region"). These counts contain no identifier for you and no individual
+    sighting record — the individual submission is discarded immediately after the count is
+    incremented.
+  </li>
+</ul>
+<p>
+  Location permission is optional. The app works fully without it; you just won't get the map,
+  regional suggestions, or location on your sightings.
+</p>
+
+<h3>An anonymous installation identifier</h3>
+<p>
+  When first launched, the app generates a random identifier for your installation. It is sent
+  with requests to our identification service and is used <strong>only</strong> to prevent abuse
+  of the service (for example, rate-limiting). It is not linked to your identity, your device's
+  advertising ID, or any account, and it is not used for analytics or advertising. It is generated
+  by the app itself and is not derived from any hardware or device identifier. If you uninstall and
+  reinstall the app, Android may restore the previous identifier as part of its own system backup
+  (see below); otherwise a new one is generated.
+</p>
+
+<h3>Reference photos</h3>
+<p>
+  To show you what an identified species or breed looks like, the app loads a reference photo from
+  public wildlife sources (iNaturalist for species, the Dog CEO API for dog breeds). Your device
+  loads these images directly, so those services receive the ordinary connection information any
+  website receives, including your IP address. No photo of yours, no location, no identifier from
+  this app, and no account information is sent with these requests.
+</p>
+
+<h2>Google Drive backup (optional)</h2>
+<p>
+  If you choose to back up your collection, BichoDex connects to <strong>your own Google
+  Drive</strong> and stores the backup in a hidden, app-specific folder
+  (<code>appDataFolder</code>) that only this app can see. The backup contains your collection
+  data and photos. <strong>BichoDex operates no server that stores your backup</strong> — it goes
+  directly from your device to your Google account. You can disconnect at any time from the app's
+  Backup screen. Deleting the app's data from your Google account is done through Google Drive.
+</p>
+
+<h2>Android system backup</h2>
+<p>
+  Separately from the above, Android's own backup feature is enabled for this app, which is the
+  default for Android apps. If you have device backup turned on in your Android settings, the
+  operating system may copy the app's local data to your own Google account and restore it when you
+  reinstall. This is handled entirely by Android, goes to your account rather than to us, and can be
+  turned off in your device's backup settings. BichoDex has no access to it.
+</p>
+
+<h2>What BichoDex does NOT do</h2>
+<ul>
+  <li>No user accounts, sign-in, or profiles.</li>
+  <li>
+    No social features — no other user can see your collection, photos, location, or activity
+    inside the app.
+  </li>
+  <li>No advertising, no ad identifiers, no third-party analytics/tracking SDKs.</li>
+  <li>No selling or sharing of personal data.</li>
+  <li>No precise/GPS location storage.</li>
+  <li>No server-side storage of your photos or your collection.</li>
+</ul>
+
+<h2>Children</h2>
+<p>
+  BichoDex is suitable for a general audience including families and children. The app does not
+  require any personal information to use, has no accounts, no social interaction between users, no
+  advertising, and no in-app purchases. The only optional data collection (approximate region,
+  anonymous install ID, photos processed-then-deleted for identification) is described above and
+  applies the same way to all users.
+</p>
+
+<h2>Data retention</h2>
+<ul>
+  <li>On your device: until you delete it or uninstall the app.</li>
+  <li>Photos sent for identification: deleted immediately after processing.</li>
+  <li>
+    Individual location submissions: discarded immediately after being added to an anonymous
+    regional count.
+  </li>
+  <li>
+    Anonymous regional counts and the shared species dictionary: retained as aggregate,
+    non-personal data.
+  </li>
+  <li>
+    Server logs may retain the anonymous install identifier and request metadata for a short
+    period for abuse prevention and debugging.
+  </li>
+</ul>
+
+<h2>Your choices</h2>
+<ul>
+  <li><strong>Location:</strong> grant or deny in your device settings at any time.</li>
+  <li><strong>Backup:</strong> connect or disconnect Google Drive from the Backup screen.</li>
+  <li>
+    <strong>Everything else:</strong> uninstalling the app removes all on-device data. Because
+    there are no accounts, there is no server-side profile to delete; to request deletion of
+    anonymous server logs, contact us at the address above.
+  </li>
+</ul>
+
+<h2>Changes to this policy</h2>
+<p>
+  If this policy changes, the updated version will be posted at this URL with a new effective
+  date.
+</p>
+
+<h2>Contact</h2>
+<p>
+  Questions about privacy or this policy:
+  <a href="mailto:tengumori.apps@gmail.com">tengumori.apps@gmail.com</a>.
+</p>
+
+</main>
+</body>
+</html>
