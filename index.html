@@ -8,10 +8,14 @@
   Standalone privacy policy page for the Google Play listing.
 
   BEFORE HOSTING — check these, they are already filled in but verify them:
-    1. The contact email tengumori.apps@gmail.com (appears twice: the header line and
-       the Contact section). This goes on the PUBLIC store listing. Confirm it is the
-       dedicated contact account and that you can actually receive mail there.
+    1. The contact email tengumori.apps@gmail.com (appears in the header line, "Your choices" and
+       the Contact section). This goes on the PUBLIC store listing. Confirm it is the dedicated
+       contact account and that you can actually receive mail there.
     2. The effective date, if it should differ from the one shown.
+
+  This version (2026-09-15) describes the anonymous online profile of M45 phase B. Publish it
+  BEFORE any build with online profiles (version 1.2 onward) reaches testers or players, and update
+  the Play Console Data safety form from data-safety.md at the same time.
 
   Host this file at a stable public URL (GitHub Pages, Google Sites, your own domain,
   a public Notion page …) and put that URL in Play Console under
@@ -54,35 +58,39 @@
 
 <h1>BichoDex — Privacy Policy</h1>
 <p class="meta">
-  Effective date: 14 September 2026<br>
+  Effective date: 15 September 2026<br>
   Contact: <a href="mailto:tengumori.apps@gmail.com">tengumori.apps@gmail.com</a>
 </p>
 
 <p class="lead">
   BichoDex is a game for identifying and collecting wildlife you photograph. This policy explains
-  exactly what the app does with your data. The short version: <strong>your collection lives on
-  your device, photos sent for identification are deleted immediately after processing, locations
-  are never recorded precisely, and there are no user accounts.</strong>
+  exactly what the app does with your data. The short version: <strong>your photos, notes and
+  locations stay on your device; photos sent for identification are deleted immediately after
+  processing; locations are never recorded precisely; and the app keeps an anonymous online
+  profile — no name, no email, no sign-in — with the daily film count and a record of which
+  animals you have found.</strong>
 </p>
 
 <hr>
 
-<h2>Data stored on your device only</h2>
-<p>
-  Everything that makes up your personal collection is stored locally on your device and is never
-  sent to a BichoDex server:
-</p>
+<h2>Data stored on your device</h2>
+<p>Your collection itself lives on your device:</p>
 <ul>
   <li>The photos you capture.</li>
   <li>Your list of identified animals and dog breeds, with dates.</li>
-  <li>The coarse location of each sighting (see "Location" below).</li>
+  <li>The coarse location of each sighting (see "Approximate location" below).</li>
   <li>Any notes you add to a sighting.</li>
   <li>Achievement progress.</li>
 </ul>
 <p>
-  If you uninstall the app, this data is removed from your device. Depending on your Android
-  settings it may still exist in a backup, either one you made yourself (see "Google Drive backup")
-  or one Android made automatically (see "Android system backup").
+  Your photos, your notes and the coarse locations of your sightings are never sent to a BichoDex
+  server. A summary of what you have found (which animals and breeds, how often, when, and in which
+  country) is also kept with your online profile — see "Your anonymous explorer profile" below.
+</p>
+<p>
+  If you uninstall the app, the data on your device is removed. Depending on your Android settings
+  it may still exist in a backup, either one you made yourself (see "Google Drive backup") or one
+  Android made automatically (see "Android system backup").
 </p>
 
 <h2>Data sent off your device</h2>
@@ -96,11 +104,62 @@
   never stored on our servers.</strong> Your own full-resolution copy stays on your device.
 </p>
 <p>
+  What the service concluded — which species it recognised, and how confident it was — is kept
+  with your profile for 30 days (see below), so a result is never lost if your connection drops
+  before it reaches your phone. The photo itself is not.
+</p>
+<p>
   Our identification service also uses Google's Gemini API as part of this process (for the
   live-photo check, for generating the species/breed facts shown in the app, and for creating the
   illustrated sketch for a species the first time anyone discovers it). The image and/or the
   species name are sent to Google for that purpose. Google processes this data as our service
-  provider.
+  provider; see Google's API terms for how they handle it.
+</p>
+
+<h3>Your anonymous explorer profile</h3>
+<p>
+  The first time the app goes online, it creates an <strong>anonymous profile</strong> on our
+  service. There is no sign-up and nothing to fill in: the profile has a random identifier and is
+  not linked to your name, email address, phone number, Google account or advertising ID. It exists
+  to keep the game fair and to remember your progress online. It holds:
+</p>
+<ul>
+  <li>
+    <strong>Your country</strong>, taken from your device's region setting, so your daily film
+    refills at midnight where you live. Only the country is stored — never a city, region or
+    coordinates.
+  </li>
+  <li>
+    <strong>Your daily film count</strong> — how many identifications you have used today. Each
+    day's count is deleted after a week.
+  </li>
+  <li>
+    <strong>A record of your finds</strong>: which animals and dog breeds you have added to your
+    collection, how many times, the date of each find and the country it was made in. No photos,
+    notes, regions or coordinates are included.
+  </li>
+  <li><strong>Recent identification results</strong> (which species a photo contained), kept for 30 days.</li>
+  <li>
+    <strong>Technical details of your installation</strong>: the app version, and the outcome of
+    the fair-play check described below.
+  </li>
+</ul>
+<p>
+  If you used BichoDex before online profiles existed, the app copies a summary of your existing
+  collection to your profile once — the same kind of summary as above (names, dates, counts and
+  countries), never photos, notes or locations.
+</p>
+<p>
+  <strong>Fair-play check (Google Play Integrity).</strong> When the profile is created, and
+  occasionally afterwards, the app asks Google Play to confirm that it is the genuine BichoDex
+  installed from Google Play, running on a real, unmodified device. Google receives information
+  about your device and the app to do this, under Google's own terms. Our service receives only
+  Google's verdict (for example "genuine app, recognised device"), which it keeps with your
+  installation.
+</p>
+<p>
+  Your profile is never shown to other players. If you stop using the app, the profile is
+  <strong>deleted automatically after 12 months</strong> without activity.
 </p>
 
 <h3>Approximate location</h3>
@@ -122,6 +181,10 @@
   </li>
 </ul>
 <p>
+  Separately, the <strong>country</strong> of each find is kept in your profile's record of finds
+  (see above) — the country only, never the region.
+</p>
+<p>
   Location permission is optional. The app works fully without it; you just won't get the map,
   regional suggestions, or location on your sightings.
 </p>
@@ -137,9 +200,8 @@
   location, or your IP address, and they are kept for at most 30 days. The identifier is not linked
   to your identity, your device's advertising ID, or any account, and it is never used for
   advertising. It is generated by the app itself and is not derived from any hardware or device
-  identifier. If you uninstall and
-  reinstall the app, Android may restore the previous identifier as part of its own system backup
-  (see below); otherwise a new one is generated.
+  identifier. If you uninstall and reinstall the app, Android may restore the previous identifier
+  as part of its own system backup (see below); otherwise a new one is generated.
 </p>
 
 <h3>Reference photos</h3>
@@ -148,7 +210,7 @@
   public wildlife sources (iNaturalist for species, the Dog CEO API for dog breeds). Your device
   loads these images directly, so those services receive the ordinary connection information any
   website receives, including your IP address. No photo of yours, no location, no identifier from
-  this app, and no account information is sent with these requests.
+  this app, and no profile information is sent with these requests.
 </p>
 
 <h2>Google Drive backup (optional)</h2>
@@ -172,10 +234,13 @@
 
 <h2>What BichoDex does NOT do</h2>
 <ul>
-  <li>No user accounts, sign-in, or profiles.</li>
   <li>
-    No social features — no other user can see your collection, photos, location, or activity
-    inside the app.
+    No sign-in, and no names, email addresses, phone numbers or contact details — your online
+    profile is anonymous.
+  </li>
+  <li>
+    No social features — no other user can see your collection, photos, location, profile or
+    activity inside the app.
   </li>
   <li>
     No advertising, no ad identifiers, no third-party analytics/tracking SDKs (the usage events
@@ -183,22 +248,28 @@
   </li>
   <li>No selling or sharing of personal data.</li>
   <li>No precise/GPS location storage.</li>
-  <li>No server-side storage of your photos or your collection.</li>
+  <li>No server-side storage of your photos, your notes, or the locations of your sightings.</li>
 </ul>
 
 <h2>Children</h2>
 <p>
   BichoDex is suitable for a general audience including families and children. The app does not
-  require any personal information to use, has no accounts, no social interaction between users, no
-  advertising, and no in-app purchases. The only optional data collection (approximate region,
-  anonymous install ID, photos processed-then-deleted for identification) is described above and
-  applies the same way to all users.
+  ask for any personal information, has no sign-in, no social interaction between users, no
+  advertising, and no in-app purchases. The data described above — the anonymous profile, the
+  fair-play check, the approximate region, the anonymous install ID and photos
+  processed-then-deleted for identification — applies the same way to all users.
 </p>
 
 <h2>Data retention</h2>
 <ul>
   <li>On your device: until you delete it or uninstall the app.</li>
   <li>Photos sent for identification: deleted immediately after processing.</li>
+  <li>Identification results kept with your profile: 30 days.</li>
+  <li>Daily film counts: deleted after a week.</li>
+  <li>
+    Your anonymous profile and its record of finds: while you use the app; deleted automatically
+    after 12 months without activity, or sooner on request (see "Your choices").
+  </li>
   <li>
     Individual location submissions: discarded immediately after being added to an anonymous
     regional count.
@@ -219,9 +290,15 @@
   <li><strong>Location:</strong> grant or deny in your device settings at any time.</li>
   <li><strong>Backup:</strong> connect or disconnect Google Drive from the Backup screen.</li>
   <li>
-    <strong>Everything else:</strong> uninstalling the app removes all on-device data. Because
-    there are no accounts, there is no server-side profile to delete; to request deletion of
-    anonymous server logs, contact us at the address above.
+    <strong>Your online profile:</strong> to have it and everything stored with it deleted, email
+    us at <a href="mailto:tengumori.apps@gmail.com">tengumori.apps@gmail.com</a> and include your
+    <strong>explorer code</strong>, shown at the bottom of the app's Settings screen. Uninstalling
+    the app does not delete the online profile straight away; it is deleted automatically after 12
+    months without activity.
+  </li>
+  <li>
+    <strong>Everything else:</strong> uninstalling the app removes all on-device data. To request
+    deletion of anonymous server logs, contact us at the address above.
   </li>
 </ul>
 
