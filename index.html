@@ -12,10 +12,16 @@
        the Contact section). This goes on the PUBLIC store listing. Confirm it is the dedicated
        contact account and that you can actually receive mail there.
     2. The effective date, if it should differ from the one shown.
+    3. THE PARENTAL CONSENT PARAGRAPH describes Epic's Kids Web Services as live. If KWS is not
+       yet set up when this is published, that paragraph states something untrue to a parent —
+       hedge it or delay publishing. See docs/MILESTONES.md M45 phase C3.
 
-  This version (2026-09-15) describes the anonymous online profile of M45 phase B. Publish it
-  BEFORE any build with online profiles (version 1.2 onward) reaches testers or players, and update
-  the Play Console Data safety form from data-safety.md at the same time.
+  This version (2026-09-17) describes M45 phases B-C and social levels 1-3: optional explorer
+  accounts, parental consent, nicknames and leaderboards, friends, and the photo showcase.
+  Publish it BEFORE any build with accounts, friends or the showcase (version 1.2 onward) reaches
+  testers or players, and update the Play Console Data safety form from data-safety.md at the same
+  time. The showcase also makes this an app with user-generated content, which changes the content
+  rating questionnaire — see content-rating-answers.md.
 
   Host this file at a stable public URL (GitHub Pages, Google Sites, your own domain,
   a public Notion page …) and put that URL in Play Console under
@@ -58,7 +64,7 @@
 
 <h1>BichoDex — Privacy Policy</h1>
 <p class="meta">
-  Effective date: 15 September 2026<br>
+  Effective date: 17 September 2026<br>
   Contact: <a href="mailto:tengumori.apps@gmail.com">tengumori.apps@gmail.com</a>
 </p>
 
@@ -66,36 +72,45 @@
   BichoDex is a game for identifying and collecting wildlife you photograph. This policy explains
   exactly what the app does with your data. The short version: <strong>your photos, notes and
   locations stay on your device; photos sent for identification are deleted immediately after
-  processing; locations are never recorded precisely; and the app keeps an anonymous online
-  profile — no name, no email, no sign-in — with the daily film count and a record of which
-  animals you have found.</strong>
+  processing; locations are never recorded precisely; and every player has an online profile
+  holding their daily film count and a record of which animals they have found. Playing alone
+  needs no sign-in and no personal details at all. If you choose to create an explorer account,
+  you give us an email address (or sign in with Google) and can then appear on leaderboards under
+  a generated nickname, add friends, and post a photo to the showcase — and those photos are the
+  one thing we store, for up to a week.</strong>
 </p>
 
-<hr>
-
 <h2>Data stored on your device</h2>
+
 <p>Your collection itself lives on your device:</p>
 <ul>
   <li>The photos you capture.</li>
   <li>Your list of identified animals and dog breeds, with dates.</li>
-  <li>The coarse location of each sighting (see "Approximate location" below).</li>
+  <li>The coarse location of each sighting (see “Approximate location” below).</li>
   <li>Any notes you add to a sighting.</li>
   <li>Achievement progress.</li>
+  <li><strong>Any name you choose for a friend.</strong> If you give a friend your own name for
+      them (“Pete”), that name is stored only on your device. It is never sent to us, never shown
+      to the friend, and never seen by anyone else.</li>
 </ul>
+
 <p>
   Your photos, your notes and the coarse locations of your sightings are never sent to a BichoDex
-  server. A summary of what you have found (which animals and breeds, how often, when, and in which
-  country) is also kept with your online profile — see "Your anonymous explorer profile" below.
+  server, with one exception you control: a photo you deliberately post to the showcase (see “The
+  photo showcase” below). A summary of what you have found (which animals and breeds, how often,
+  when, and in which country) is also kept with your online profile — see below.
 </p>
+
 <p>
   If you uninstall the app, the data on your device is removed. Depending on your Android settings
-  it may still exist in a backup, either one you made yourself (see "Google Drive backup") or one
-  Android made automatically (see "Android system backup").
+  it may still exist in a backup, either one you made yourself (see “Google Drive backup”) or one
+  Android made automatically (see “Android system backup”).
 </p>
 
 <h2>Data sent off your device</h2>
 
 <h3>Photos, for identification only</h3>
+
 <p>
   When you capture a photo and it is identified, a copy of that image (cropped to the framing
   guide) is sent over an encrypted connection to our identification service. There it is analysed
@@ -103,108 +118,230 @@
   screen or a printed picture. <strong>The image is processed and then deleted immediately. It is
   never stored on our servers.</strong> Your own full-resolution copy stays on your device.
 </p>
+
 <p>
   What the service concluded — which species it recognised, and how confident it was — is kept
-  with your profile for 30 days (see below), so a result is never lost if your connection drops
-  before it reaches your phone. The photo itself is not.
+  with your profile for 30 days, so a result is never lost if your connection drops before it
+  reaches your phone. The photo itself is not.
 </p>
+
 <p>
-  Our identification service also uses Google's Gemini API as part of this process (for the
+  Our identification service also uses Google’s Gemini API as part of this process (for the
   live-photo check, for generating the species/breed facts shown in the app, and for creating the
   illustrated sketch for a species the first time anyone discovers it). The image and/or the
   species name are sent to Google for that purpose. Google processes this data as our service
-  provider; see Google's API terms for how they handle it.
+  provider; see Google’s API terms for how they handle it.
 </p>
 
-<h3>Your anonymous explorer profile</h3>
+<h3>Your explorer profile</h3>
+
 <p>
-  The first time the app goes online, it creates an <strong>anonymous profile</strong> on our
-  service. There is no sign-up and nothing to fill in: the profile has a random identifier and is
-  not linked to your name, email address, phone number, Google account or advertising ID. It exists
-  to keep the game fair and to remember your progress online. It holds:
+  The first time the app goes online, it creates a profile on our service. There is no sign-up and
+  nothing to fill in: the profile has a random identifier and, unless you later choose to create an
+  account, it is not linked to your name, email address, phone number, Google account or
+  advertising ID. It exists to keep the game fair and to remember your progress online. It holds:
 </p>
 <ul>
-  <li>
-    <strong>Your country</strong>, taken from your device's region setting, so your daily film
-    refills at midnight where you live. Only the country is stored — never a city, region or
-    coordinates.
-  </li>
-  <li>
-    <strong>Your daily film count</strong> — how many identifications you have used today. Each
-    day's count is deleted after a week.
-  </li>
-  <li>
-    <strong>A record of your finds</strong>: which animals and dog breeds you have added to your
-    collection, how many times, the date of each find and the country it was made in. No photos,
-    notes, regions or coordinates are included.
-  </li>
-  <li><strong>Recent identification results</strong> (which species a photo contained), kept for 30 days.</li>
-  <li>
-    <strong>Technical details of your installation</strong>: the app version, and the outcome of
-    the fair-play check described below.
-  </li>
+  <li><strong>Your country</strong>, taken from your device’s region setting, so your daily film
+      refills at midnight where you live. Only the country is stored — never a city, region or
+      coordinates.</li>
+  <li><strong>Your daily film count</strong> — how many identifications you have used today. Each
+      day’s count is deleted after a week.</li>
+  <li><strong>A record of your finds</strong>: which animals and dog breeds you have added to your
+      collection, how many times, the date of each find and the country it was made in. No photos,
+      notes, regions or coordinates are included.</li>
+  <li><strong>Recent identification results</strong> (which species a photo contained), kept for
+      30 days.</li>
+  <li><strong>Technical details of your installation</strong>: the app version, and the outcome of
+      the fair-play check described below.</li>
 </ul>
+
 <p>
   If you used BichoDex before online profiles existed, the app copies a summary of your existing
   collection to your profile once — the same kind of summary as above (names, dates, counts and
   countries), never photos, notes or locations.
 </p>
+
 <p>
   <strong>Fair-play check (Google Play Integrity).</strong> When the profile is created, and
   occasionally afterwards, the app asks Google Play to confirm that it is the genuine BichoDex
   installed from Google Play, running on a real, unmodified device. Google receives information
-  about your device and the app to do this, under Google's own terms. Our service receives only
-  Google's verdict (for example "genuine app, recognised device"), which it keeps with your
+  about your device and the app to do this, under Google’s own terms. Our service receives only
+  Google’s verdict (for example “genuine app, recognised device”), which it keeps with your
   installation.
 </p>
+
 <p>
-  Your profile is never shown to other players. If you stop using the app, the profile is
-  <strong>deleted automatically after 12 months</strong> without activity.
+  Without an account, your profile is never shown to other players. If you stop using the app, a
+  profile without an account is <strong>deleted automatically after 12 months</strong> without
+  activity.
+</p>
+
+<h3>Your explorer account (optional)</h3>
+
+<p>
+  Everything above works with no sign-in. <strong>You only need an account to use the social parts
+  of the game</strong> — leaderboards, friends and the showcase. Creating one is free and keeps
+  everything you have already collected; it turns your existing profile into an account rather
+  than starting a new one.
+</p>
+
+<p>To create an account we ask for:</p>
+<ul>
+  <li><strong>Your month and year of birth.</strong> We store only the resulting <em>age band</em>
+      — whether you are above or below the age of digital consent in your country — never the date
+      itself. This decides whether a parent needs to approve your account (see “Children”).</li>
+  <li><strong>An email address, or your Google account.</strong> With email, we send a one-time
+      code to confirm the address; there is no password. With Google, we receive your email
+      address and name from Google when you choose that account.</li>
+</ul>
+
+<p>
+  Your account then holds your email address, which sign-in method you used, your age band, your
+  consent status, and a <strong>nickname</strong> generated for you from a word list (see below).
+  We do not ask for and do not store your real name, your address, your phone number or your date
+  of birth. If you sign in with Google, the name Google provides is not shown to other players and
+  is not used anywhere in the game.
+</p>
+
+<p>You can delete your account at any time from the app — see “Your choices”.</p>
+
+<h3>Your nickname, leaderboards and community counts</h3>
+
+<p>
+  Players never appear under a real name. Every account gets a <strong>nickname generated from a
+  fixed word list</strong> — an adjective and an animal, such as “Curious Otter”. You can shuffle
+  it, but you cannot type your own, precisely so that a nickname can never contain a real name, a
+  school, an age or a way to contact someone.
+</p>
+<ul>
+  <li><strong>Leaderboards are off by default.</strong> Your nickname appears on them only if you
+      switch on “Show me on leaderboards” on the Explorer account screen. Profiles without an
+      account can look at leaderboards but never appear on them.</li>
+  <li>What a leaderboard shows is your <strong>nickname, your number of different animals found,
+      any season badges you have earned, and your country</strong> — nothing finer than the
+      country, and never a date, a place, a photo or an activity status.</li>
+  <li><strong>Community counts are anonymous.</strong> Figures like “found by 41 explorers”, the
+      weekly community goal and “you have found more animals than 60% of explorers” are totals
+      across all players and contain no identifier for anyone. The percentile is withheld entirely
+      until there are enough players for it to be meaningless about any individual.</li>
+</ul>
+
+<h3>Friends</h3>
+
+<p>
+  Adding a friend is deliberately narrow: there is <strong>no search, no suggestions and no
+  “people near you.”</strong> You add someone by showing them a code that lasts about ten minutes
+  and can be used once, and both of you confirm before anything is shared.
+</p>
+
+<p>
+  A friend can see: your <strong>nickname</strong>, your <strong>counts per animal type</strong>
+  (“24 birds, 11 insects”), your <strong>total collection size</strong>, and <strong>which animals
+  the two of you both have</strong>. A friend is never shown a list of animals you have that they
+  do not, any photo of yours (except one you post publicly to the showcase), any location, any
+  date, or whether you are online or have been recently.
+</p>
+
+<p>
+  <strong>There is no messaging in BichoDex</strong> — no chat, no comments, no text of any kind
+  between players.
+</p>
+
+<p>
+  You can remove or block a friend at any time. Blocking removes the friendship and hides each of
+  you from the other.
+</p>
+
+<h3>The photo showcase</h3>
+
+<p>This is the one place BichoDex stores a photo of yours, and only when you choose to post it.</p>
+
+<p>
+  If you have an account, you may post a photo of an animal you have found to a <strong>global
+  showcase</strong>, where other players can be shown it and give it a heart. What happens to a
+  photo you post:
+</p>
+<ul>
+  <li>It is <strong>uploaded to our storage in the European Union</strong>, re-encoded at reduced
+      size, and <strong>all metadata is removed in the process — including any location
+      information.</strong></li>
+  <li>It is checked <strong>automatically</strong> before it can be shown. A photo in which a
+      person is detected is rejected and not stored.</li>
+  <li>It is also <strong>reviewed by a person</strong>. Photos from players who have not posted
+      before, and any photo that another player reports, are looked at by us before being
+      shown.</li>
+  <li>It is <strong>deleted after one week at the latest.</strong> You may have at most three
+      photos posted at once; posting a fourth deletes the oldest immediately.</li>
+  <li><strong>You can take it down at any time</strong> from the showcase’s “My photos” screen.
+      The image is removed immediately.</li>
+  <li>Any player can <strong>report</strong> a photo. A reported photo is hidden straight away,
+      before anyone reviews it.</li>
+</ul>
+
+<p>
+  What is shown alongside a posted photo is the <strong>animal’s name and the poster’s
+  nickname</strong> — never a real name, a location, a date, or any way to contact the poster.
+</p>
+
+<p>
+  Hearts a photo earns are counted and sent back to your own device, so your collection can show
+  which of your photos did well. Hearts are a score only: they unlock nothing and buy nothing.
+</p>
+
+<p>
+  Your original photo always stays in your collection on your device, whatever happens to the
+  posted copy.
 </p>
 
 <h3>Approximate location</h3>
+
 <p>
-  If you grant location permission, BichoDex records <strong>only a coarse region</strong> for
-  each sighting — your location is snapped to a grid cell roughly 20&nbsp;km across (or a named
-  area) <strong>on your device, before it is stored or sent anywhere.</strong> A precise
-  coordinate is never saved and never leaves your device. This is a deliberate safety choice:
-  precise locations of wild animals can be misused.
+  If you grant location permission, BichoDex records <strong>only a coarse region</strong> for each
+  sighting — your location is snapped to a grid cell roughly 20 km across (or a named area)
+  <strong>on your device, before it is stored or sent anywhere.</strong> A precise coordinate is
+  never saved and never leaves your device. This is a deliberate safety choice: precise locations
+  of wild animals can be misused.
 </p>
+
 <p>The coarse region is:</p>
 <ul>
   <li>Stored with the sighting on your device.</li>
-  <li>
-    Sent to our service as part of an anonymous, aggregated count ("how many people have seen this
-    species in this region"). These counts contain no identifier for you and no individual
-    sighting record — the individual submission is discarded immediately after the count is
-    incremented.
-  </li>
+  <li>Sent to our service as part of an anonymous, aggregated count (“how many people have seen
+      this species in this region”). These counts contain no identifier for you and no individual
+      sighting record — the individual submission is discarded immediately after the count is
+      incremented.</li>
 </ul>
+
 <p>
-  Separately, the <strong>country</strong> of each find is kept in your profile's record of finds
-  (see above) — the country only, never the region.
+  Separately, the <strong>country</strong> of each find is kept in your profile’s record of finds —
+  the country only, never the region. A coarse region is never shown to another player, and never
+  attached to a photo you post.
 </p>
+
 <p>
-  Location permission is optional. The app works fully without it; you just won't get the map,
+  Location permission is optional. The app works fully without it; you just won’t get the map,
   regional suggestions, or location on your sightings.
 </p>
 
 <h3>An anonymous installation identifier</h3>
+
 <p>
-  When first launched, the app generates a random identifier for your installation. It is sent
-  with requests to our identification service and is used to prevent abuse of the service (for
-  example, rate-limiting) and to understand, in aggregate, how the app is used so we can improve
-  it. For that second purpose our service records simple usage events - for example, that an
-  identification was made, which species it returned, whether it succeeded, and how long it took -
+  When first launched, the app generates a random identifier for your installation. It is sent with
+  requests to our identification service and is used to prevent abuse of the service (for example,
+  rate-limiting) and to understand, in aggregate, how the app is used so we can improve it. For
+  that second purpose our service records simple usage events — for example, that an
+  identification was made, which species it returned, whether it succeeded, and how long it took —
   together with a shortened form of this identifier. These events never include your photos, your
   location, or your IP address, and they are kept for at most 30 days. The identifier is not linked
-  to your identity, your device's advertising ID, or any account, and it is never used for
+  to your identity, your device’s advertising ID, or any account, and it is never used for
   advertising. It is generated by the app itself and is not derived from any hardware or device
   identifier. If you uninstall and reinstall the app, Android may restore the previous identifier
   as part of its own system backup (see below); otherwise a new one is generated.
 </p>
 
 <h3>Reference photos</h3>
+
 <p>
   To show you what an identified species or breed looks like, the app loads a reference photo from
   public wildlife sources (iNaturalist for species, the Dog CEO API for dog breeds). Your device
@@ -213,102 +350,177 @@
   this app, and no profile information is sent with these requests.
 </p>
 
+<h2>Where your data is stored, and who processes it</h2>
+
+<p>
+  Our service and its database run <strong>in the European Union</strong>. Accounts, profiles,
+  collections and showcase photos are stored there.
+</p>
+
+<p>We use the following providers, who process data on our behalf:</p>
+<ul>
+  <li><strong>Modal</strong> — runs our identification and game service.</li>
+  <li><strong>Supabase</strong> (Frankfurt, Germany) — our database, account sign-in and photo
+      storage.</li>
+  <li><strong>Google</strong> — the Gemini API (identification and generated species
+      text/illustrations), Play Integrity (the fair-play check), and Google sign-in if you choose
+      it.</li>
+  <li><strong>Resend</strong> — sends the one-time codes used for email sign-in.</li>
+  <li><strong>Epic Games’ Kids Web Services</strong> — verifies a parent’s approval for a child’s
+      account (see “Children”).</li>
+</ul>
+
+<p>
+  Some of these providers are based outside the EU and may process data outside it under the
+  safeguards their terms provide.
+</p>
+
 <h2>Google Drive backup (optional)</h2>
+
 <p>
   If you choose to back up your collection, BichoDex connects to <strong>your own Google
-  Drive</strong> and stores the backup in a hidden, app-specific folder
-  (<code>appDataFolder</code>) that only this app can see. The backup contains your collection
-  data and photos. <strong>BichoDex operates no server that stores your backup</strong> — it goes
-  directly from your device to your Google account. You can disconnect at any time from the app's
-  Backup screen. Deleting the app's data from your Google account is done through Google Drive.
+  Drive</strong> and stores the backup in a hidden, app-specific folder (<code>appDataFolder</code>)
+  that only this app can see. The backup contains your collection data and photos. <strong>BichoDex
+  operates no server that stores your backup</strong> — it goes directly from your device to your
+  Google account. You can disconnect at any time from the app’s Backup screen. Deleting the app’s
+  data from your Google account is done through Google Drive.
+</p>
+
+<p>
+  Backup requires an explorer account, so that a restored collection can be matched to the right
+  player.
 </p>
 
 <h2>Android system backup</h2>
+
 <p>
-  Separately from the above, Android's own backup feature is enabled for this app, which is the
+  Separately from the above, Android’s own backup feature is enabled for this app, which is the
   default for Android apps. If you have device backup turned on in your Android settings, the
-  operating system may copy the app's local data to your own Google account and restore it when you
-  reinstall. This is handled entirely by Android, goes to your account rather than to us, and can be
-  turned off in your device's backup settings. BichoDex has no access to it.
+  operating system may copy the app’s local data to your own Google account and restore it when you
+  reinstall. This is handled entirely by Android, goes to your account rather than to us, and can
+  be turned off in your device’s backup settings. BichoDex has no access to it.
 </p>
 
 <h2>What BichoDex does NOT do</h2>
+
 <ul>
-  <li>
-    No sign-in, and no names, email addresses, phone numbers or contact details — your online
-    profile is anonymous.
-  </li>
-  <li>
-    No social features — no other user can see your collection, photos, location, profile or
-    activity inside the app.
-  </li>
-  <li>
-    No advertising, no ad identifiers, no third-party analytics/tracking SDKs (the usage events
-    described above are recorded by our own service, not by any SDK in the app).
-  </li>
-  <li>No selling or sharing of personal data.</li>
-  <li>No precise/GPS location storage.</li>
-  <li>No server-side storage of your photos, your notes, or the locations of your sightings.</li>
+  <li><strong>No messaging between players, ever</strong> — no chat, no comments, no captions, no
+      text reactions. The only words in the game are ones we generated.</li>
+  <li><strong>No typed names.</strong> Nicknames come from a fixed word list; you cannot write your
+      own.</li>
+  <li><strong>No stranger discovery</strong> — no player search, no friend suggestions, no “people
+      near you”.</li>
+  <li><strong>No location shown to anyone.</strong> Leaderboards are never finer than country, and
+      posted photos carry no location at all.</li>
+  <li><strong>No “online now”, “last seen” or activity status.</strong></li>
+  <li><strong>No advertising</strong>, no ad identifiers, no third-party analytics or tracking SDKs
+      (the usage events described above are recorded by our own service, not by any SDK in the
+      app).</li>
+  <li><strong>No selling or sharing of personal data.</strong></li>
+  <li><strong>No precise/GPS location storage.</strong></li>
+  <li><strong>No server-side storage of your photos</strong> other than one you deliberately post
+      to the showcase, and no server-side storage of your notes or the locations of your sightings,
+      ever.</li>
+  <li><strong>No in-app purchases.</strong></li>
 </ul>
 
 <h2>Children</h2>
+
 <p>
-  BichoDex is suitable for a general audience including families and children. The app does not
-  ask for any personal information, has no sign-in, no social interaction between users, no
-  advertising, and no in-app purchases. The data described above — the anonymous profile, the
-  fair-play check, the approximate region, the anonymous install ID and photos
-  processed-then-deleted for identification — applies the same way to all users.
+  BichoDex is made for a general audience including families and children, and the whole game can
+  be played with <strong>no account, no sign-in and no personal information at all</strong>. A child
+  can photograph animals and build a collection without giving us anything.
+</p>
+
+<p>
+  Personal information is only involved if a player chooses to create an explorer account for the
+  social features. At that point:
+</p>
+<ul>
+  <li>We ask for a <strong>month and year of birth</strong> and store only the age band. The
+      question is asked neutrally, never as “are you over 13?”.</li>
+  <li>The <strong>age of digital consent varies by country</strong> (13 in the US and UK, 14 in
+      Spain, 16 in Germany and the Netherlands, among others). We use the threshold for the
+      player’s country, and the strictest one (16) where the country is unknown.</li>
+  <li><strong>Below that age, a parent must approve the account before any social feature
+      works.</strong> The child enters a parent’s email address; we ask <strong>Epic Games’ Kids
+      Web Services</strong> to contact the parent, and the parent verifies who they are and
+      approves or refuses through Kids Web Services’ own parent portal. The child needs no email
+      address or Google account of their own.</li>
+  <li><strong>A parent may withdraw approval or delete the child’s account at any time</strong>,
+      through the same portal or by contacting us. Withdrawing approval switches the social
+      features off; the child’s collection on their device is untouched.</li>
+  <li>Approval is <strong>all or nothing</strong> — one approval covers leaderboards, friends and
+      the showcase.</li>
+</ul>
+
+<p>
+  The safety rules described throughout this policy exist because of this audience: no messaging,
+  no typed nicknames, no stranger discovery, no location, no activity status, human review of
+  public photos, and reporting and blocking available from the first day.
 </p>
 
 <h2>Data retention</h2>
+
 <ul>
   <li>On your device: until you delete it or uninstall the app.</li>
   <li>Photos sent for identification: deleted immediately after processing.</li>
   <li>Identification results kept with your profile: 30 days.</li>
   <li>Daily film counts: deleted after a week.</li>
-  <li>
-    Your anonymous profile and its record of finds: while you use the app; deleted automatically
-    after 12 months without activity, or sooner on request (see "Your choices").
-  </li>
-  <li>
-    Individual location submissions: discarded immediately after being added to an anonymous
-    regional count.
-  </li>
-  <li>
-    Anonymous regional counts and the shared species dictionary: retained as aggregate,
-    non-personal data.
-  </li>
-  <li>
-    Server logs may retain the anonymous install identifier and request metadata for a short
-    period for abuse prevention and debugging.
-  </li>
-  <li>Usage events (see "An anonymous installation identifier"): deleted automatically after 30 days.</li>
+  <li><strong>Photos posted to the showcase: at most one week</strong>, and immediately when you
+      take one down, post a fourth, or it is rejected in review.</li>
+  <li>A profile <strong>without</strong> an account and its record of finds: while you use the app;
+      deleted automatically after 12 months without activity, or sooner on request.</li>
+  <li>An <strong>account</strong> and its record of finds: kept until you delete it. There is no
+      automatic deletion for accounts.</li>
+  <li><strong>A deleted account: removed after a 14-day grace period</strong>, during which signing
+      in again cancels the deletion.</li>
+  <li>Individual location submissions: discarded immediately after being added to an anonymous
+      regional count.</li>
+  <li>Anonymous regional counts and the shared species dictionary: retained as aggregate,
+      non-personal data.</li>
+  <li>Server logs may retain the anonymous install identifier and request metadata for a short
+      period for abuse prevention and debugging.</li>
+  <li>Usage events (see “An anonymous installation identifier”): deleted automatically after 30
+      days.</li>
 </ul>
 
 <h2>Your choices</h2>
+
 <ul>
+  <li><strong>Play without an account.</strong> The whole collecting game works with no sign-in.
+      Social features are the only thing an account unlocks.</li>
   <li><strong>Location:</strong> grant or deny in your device settings at any time.</li>
+  <li><strong>Leaderboards:</strong> appear on them or not, from the Explorer account screen. Off
+      by default.</li>
+  <li><strong>Friends:</strong> add, remove or block at any time. Blocking hides you from that
+      player permanently.</li>
+  <li><strong>Showcase:</strong> posting is always your choice, one photo at a time, and you can
+      take any of your posted photos down immediately from “My photos”.</li>
+  <li><strong>Report a photo</strong> you think should not be there — it is hidden immediately.</li>
   <li><strong>Backup:</strong> connect or disconnect Google Drive from the Backup screen.</li>
-  <li>
-    <strong>Your online profile:</strong> to have it and everything stored with it deleted, email
-    us at <a href="mailto:tengumori.apps@gmail.com">tengumori.apps@gmail.com</a> and include your
-    <strong>explorer code</strong>, shown at the bottom of the app's Settings screen. Uninstalling
-    the app does not delete the online profile straight away; it is deleted automatically after 12
-    months without activity.
-  </li>
-  <li>
-    <strong>Everything else:</strong> uninstalling the app removes all on-device data. To request
-    deletion of anonymous server logs, contact us at the address above.
-  </li>
+  <li><strong>Delete your account:</strong> from the Explorer account screen in the app. Everything
+      stored with it — your record of finds, nickname, friendships, posted photos and email address
+      — is deleted after a 14-day grace period. Your collection stays on your device unless you
+      remove it yourself.</li>
+  <li><strong>Without an account:</strong> to have your profile and everything stored with it
+      deleted, email us at the address above and include your <strong>explorer code</strong>, shown
+      at the bottom of the app’s Settings screen. Uninstalling the app does not delete the profile
+      straight away; it is deleted automatically after 12 months without activity.</li>
+  <li><strong>Parents:</strong> to withdraw approval for a child’s account or delete it, use the
+      Kids Web Services parent portal or contact us at the address above.</li>
+  <li><strong>Everything else:</strong> uninstalling the app removes all on-device data. To request
+      deletion of anonymous server logs, contact us at the address above.</li>
 </ul>
 
 <h2>Changes to this policy</h2>
+
 <p>
-  If this policy changes, the updated version will be posted at this URL with a new effective
-  date.
+  If this policy changes, the updated version will be posted at this URL with a new effective date.
 </p>
 
 <h2>Contact</h2>
+
 <p>
   Questions about privacy or this policy:
   <a href="mailto:tengumori.apps@gmail.com">tengumori.apps@gmail.com</a>.
